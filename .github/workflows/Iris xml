@@ -1,0 +1,53 @@
+  C: <?xml version="1.0"?>
+   C: <request xmlns="urn:ietf:params:xml:ns:iris1"
+   C:   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+   C:
+   C:   <control>
+   C:     <onlyCheckPermissions />
+   C:   </control>
+   C:
+   C:   <searchSet>
+   C:
+   C:     <lookupEntity
+   C:       registryType="dreg1"
+   C:       entityClass="local"
+   C:       entityName="AUP" />
+   C:
+   C:   </searchSet>
+   C:
+   C: </request>
+
+   S: <?xml version="1.0"?>
+   S: <response xmlns="urn:ietf:params:xml:ns:iris1"
+   S:           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+   S:
+   S:   <reaction>
+   S:     <standardReaction>
+   S:       <controlAccepted />
+   S:     </standardReaction>
+   S:   </reaction>
+   S:
+   S:   <resultSet>
+   S:     <answer>
+   S:
+   S:       <simpleEntity
+   S:         authority="example.com" registryType="dreg1"
+   S:         entityClass="local" entityName="AUP" >
+   S:         <property name="legal" language="en">
+   S:           It is illegal to use information from this service
+   S:           for the purposes of sending unsolicited bulk email.
+   S:         </property>
+   S:       </simpleEntity>
+   S:
+   S:     </answer>
+   S:   </resultSet>
+   S:
+   S: </response>
+
+
+
+
+Newton & Sanz               Standards Track                    [Page 17]
+
+
+RFC 3981               
